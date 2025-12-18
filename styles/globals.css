@@ -9,7 +9,9 @@
 
   --red:#e51110;
   --redSoft:rgba(229,17,16,.08);
-  --max:980px;
+
+  --max:1060px;     /* iets breder op desktop */
+  --pad:22px;
 }
 
 *{box-sizing:border-box}
@@ -25,54 +27,86 @@ body{
 }
 a{color:inherit;text-decoration:none}
 
-.container{max-width:var(--max); margin:0 auto; padding:22px}
+/* Layout */
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:var(--pad);
+}
 
+/* Topbar / Nav */
 .topbar{
   position:sticky; top:0; z-index:20;
-  background: rgba(246,247,251,.82);
-  backdrop-filter: blur(10px);
+  background: rgba(246,247,251,.86);
+  backdrop-filter: blur(12px);
   border-bottom:1px solid var(--line);
 }
-.nav{display:flex; align-items:center; justify-content:space-between; gap:14px}
-.brand{display:flex; align-items:center}
-.logo{height:34px; width:auto; display:block}
 
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  min-height:78px; /* voelt luxer + ruimte voor groter logo */
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+/* 🔥 LOGO FIX: groter + responsive */
+.logo{
+  height:62px;           /* desktop */
+  width:auto;
+  display:block;
+  object-fit:contain;
+}
+
+/* Links */
 .links{display:flex; gap:10px; align-items:center}
 .links a{
   color:var(--muted);
-  padding:8px 10px;
+  padding:10px 12px;
   border-radius:12px;
-  font-weight:650;
+  font-weight:750;
 }
 .links a:hover{color:var(--text); background:rgba(17,24,39,.04)}
 
 .navActions{display:flex; gap:10px; align-items:center}
 
+/* Buttons */
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  padding:10px 14px;
+  padding:11px 16px;
   border-radius:999px;
   border:1px solid var(--line);
   background:#fff;
-  font-weight:800;
+  font-weight:850;
   box-shadow: 0 6px 16px rgba(17,24,39,.06);
   white-space:nowrap;
   cursor:pointer;
+  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
 }
 .btn:hover{background: rgba(17,24,39,.02)}
+.btn:active{transform: translateY(1px)}
 .btnRed{
   border-color: rgba(229,17,16,.30);
-  background: linear-gradient(180deg, rgba(229,17,16,.14), rgba(229,17,16,.06));
+  background: linear-gradient(180deg, rgba(229,17,16,.16), rgba(229,17,16,.06));
 }
 
+/* Cards */
 .card{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:var(--r);
   box-shadow:var(--shadow);
-  padding:20px;
+  padding:22px;
 }
 
+/* Typography */
 .hero{padding:22px}
 .kicker{
   display:inline-flex; align-items:center; gap:10px;
@@ -84,23 +118,32 @@ a{color:inherit;text-decoration:none}
   font-weight:900;
   font-size:13px;
 }
-h1{margin:10px 0 10px; font-size:38px; line-height:1.12}
+h1{margin:10px 0 10px; font-size:40px; line-height:1.12}
 h2{margin:0 0 10px; font-size:22px}
 p{margin:0 0 12px}
 .muted{color:var(--muted)}
 .small{font-size:13px}
 
+/* Grids */
 .stack{display:grid; gap:14px; padding:18px 0}
-.stack2{grid-template-columns: 1fr}
-.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
-.actions .btn{flex: 1 1 200px}
+.stack2{display:grid; gap:14px; grid-template-columns: 1fr}
 
-/* small utility helpers (Tailwind-like, used in pages) */
+/* Actions */
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.actions .btn{flex: 1 1 220px}
+
+/* small utility helpers (Tailwind-like) */
 .text-xl{font-size:20px; line-height:1.25}
 .font-semibold{font-weight:700}
 .mt-4{margin-top:16px}
 .mb-6{margin-bottom:24px}
 
+/* Lists */
 .list{display:grid; gap:10px; margin-top:10px}
 .row{
   display:flex; gap:10px; align-items:flex-start;
@@ -127,7 +170,7 @@ p{margin:0 0 12px}
 /* Slider */
 .slider{padding:0; overflow:hidden}
 .sliderInner{position:relative}
-.slideImg{width:100%; height:360px; object-fit:cover; display:block; background:#eef1f6}
+.slideImg{width:100%; height:380px; object-fit:cover; display:block; background:#eef1f6}
 .caption{
   position:absolute; left:14px; bottom:14px;
   padding:10px 12px;
@@ -173,35 +216,60 @@ p{margin:0 0 12px}
   background:#fff;
   margin-top:10px;
 }
-.mapWrap iframe{width:100%; height:380px; border:0; display:block}
+.mapWrap iframe{width:100%; height:420px; border:0; display:block}
 
 /* Logos */
 .logoSection{margin-top:6px}
 .logoHeader{margin-bottom:10px}
 .logoGrid{
   display:grid;
-  gap:10px;
+  gap:12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-@media (min-width: 700px){
-  .logoGrid{grid-template-columns: repeat(4, minmax(0, 1fr))}
-}
-
-/* Logo strip */
-.logoStrip{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:10px}
 .logoCard{
   border:1px solid var(--line);
   background: rgba(17,24,39,.02);
   border-radius:14px;
-  padding:10px 12px;
+  padding:12px;
   display:grid;
   place-items:center;
+  min-height:76px;
 }
-.logoImg{height:34px; width:auto; display:block; filter: saturate(0.9)}
+.logoImg{
+  height:44px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  filter: saturate(0.95);
+}
+
+/* Mobile-first logo strip (smooth horizontal scroll) */
+.logoStrip{
+  display:flex;
+  gap:12px;
+  overflow:auto;
+  padding-bottom:6px;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type:x mandatory;
+}
+.logoStrip .logoCard{
+  flex:0 0 auto;
+  min-width:160px;
+  scroll-snap-align:start;
+}
+
+/* Responsive */
+@media (min-width: 700px){
+  .logoGrid{grid-template-columns: repeat(4, minmax(0, 1fr))}
+  .logoStrip{overflow:visible; scroll-snap-type:none; flex-wrap:wrap}
+  .logoStrip .logoCard{min-width:auto}
+}
 
 @media (max-width: 860px){
   .links{display:none}
-  h1{font-size:32px}
+  h1{font-size:34px}
+  .logo{height:54px}       /* iPad / tablet */
+  .nav{min-height:72px}
 }
 
 @media (min-width: 980px){
@@ -209,10 +277,12 @@ p{margin:0 0 12px}
 }
 
 @media (max-width: 520px){
-  .container{padding:16px}
+  :root{ --pad:16px; }
   .card{padding:16px}
   .actions{flex-direction:column}
   .actions .btn{width:100%; flex:1 1 auto}
-  .mapWrap iframe{height:300px}
+  .mapWrap iframe{height:320px}
   .slideImg{height:260px}
+  .logo{height:48px}       /* telefoon */
+  .nav{min-height:68px}
 }
