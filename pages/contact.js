@@ -2,10 +2,10 @@ import Layout from "../components/Layout";
 
 export default function Contact() {
   // VERVANG DIT MET JE PLAATS/REGIO:
-  const mapsQuery = encodeURIComponent("MH Elektra Nederland");
+  const mapsQuery = encodeURIComponent("Korvetwal 13, 2317 GR Leiden, Nederland");
 
   return (
-    <Layout title="Contact | MH-Elektra" description="Contact met MH-Elektra. Bel, mail of WhatsApp. Inclusief locatiekaart.">
+    <Layout title="Contact | MH-Elektra" description="Contact met MH Elektra. Bel, mail of WhatsApp. Inclusief locatiekaart.">
       <section className="stack">
         <div className="card">
           <h1>Contact</h1>
