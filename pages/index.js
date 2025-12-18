@@ -6,10 +6,10 @@ export default function Home() {
     <Layout title="MH-Elektra | Elektricien" description="MH-Elektra: storingen, meterkast/groepenkast, laadpalen en verlichting. Snel contact en duidelijke afspraken.">
       <section className="stack">
         <div className="hero card">
-          <span className="kicker">⚡ MH-Elektra • betrouwbaar • netjes • veilig</span>
-          <h1>Elektricien voor meterkast, storingen en installatie</h1>
+          <span className="kicker">Uw elektricien in Leiden en omstreken </span>
+          <h1>⚡ Welcome bij MH Elektra ⚡</h1>
           <p className="muted">
-            Licht, strak en overzichtelijk. Duidelijke afspraken, snelle reactie en netjes werk.
+            Of het nu om een kleine klus of een groter project gaat, ik sta voor je klaar.
           </p>
 
           <div className="actions">
