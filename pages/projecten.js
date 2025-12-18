@@ -7,7 +7,7 @@ export default function Projecten() {
       <section className="stack">
         <div className="card">
           <h1>Projecten</h1>
-          <p className="muted">Plaats je klusfoto’s in <code>/public/slides/</code> als slide1.jpg, slide2.jpg, slide3.jpg</p>
+          <p className="muted">Opgelverde projecten</p>
         </div>
 
         <Slider />
