@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 export default function Contact() {
   // Locatie voor Google Maps
-  const mapsQuery = encodeURIComponent("Korvetwal 13, 2317 GR Leiden, Nederland");
+  const mapsQuery = encodeURIComponent("Leiden, Nederland");
 
   return (
     <Layout title="Contact | MH-Elektra" description="Contact met MH-Elektra. Bel, mail of WhatsApp. Inclusief locatiekaart.">
@@ -21,12 +21,7 @@ export default function Contact() {
         <div className="card">
           <h2>Locatie / Werkgebied</h2>
           <div className="mb-6">
-            <h3 className="text-xl font-semibold">Bezoekadres</h3>
-            <p>
-              Korvetwal 13
-              <br />
-              2317 GR Leiden
-            </p>
+               </p>
 
             <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
             <p>
