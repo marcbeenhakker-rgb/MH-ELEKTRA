@@ -21,7 +21,20 @@ export default function Contact() {
         <div className="card">
           <h2>Locatie / Werkgebied</h2>
           <div className="mb-6">
-               </p>
+            <h3 className="text-xl font-semibold">Bezoekadres</h3>
+            <p>
+              Korvetwal 13
+              <br />
+              2317 GR Leiden
+            </p>
+
+            <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
+            <p>
+              MH Elektra is gevestigd in Leiden en actief binnen een straal van ±30 km.
+              <br />
+              Ook buiten deze regio? Neem gerust contact op voor de mogelijkheden.
+            </p>
+          </div>
 
             <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
             <p>
