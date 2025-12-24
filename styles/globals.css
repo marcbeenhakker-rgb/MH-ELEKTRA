@@ -264,7 +264,7 @@ p{margin:0 0 12px}
 @media (max-width: 860px){
   .links{display:none}
   h1{font-size:34px}
-  .logo{height:54px}   /* iPad/tablet */
+  .logo{height:100px}   /* iPad/tablet */
   .nav{min-height:72px}
 }
 
@@ -279,6 +279,6 @@ p{margin:0 0 12px}
   .actions .btn{width:100%; flex:1 1 auto}
   .mapWrap iframe{height:320px}
   .slideImg{height:260px}
-  .logo{height:48px}   /* telefoon */
+  .logo{height:100px}   /* telefoon */
   .nav{min-height:68px}
 }
