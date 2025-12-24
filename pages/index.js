@@ -8,7 +8,7 @@ export default function Home() {
       <section className="stack">
         <div className="hero card">
           <span className="kicker">Uw elektricien in Leiden en omstreken</span>
-          <h1>⚡Welcome bij MH Elektra⚡</h1>
+          <h1>Welcome bij MH Elektra</h1>
           <p className="muted">
             Of het nu gaat om een kleine klus of een groter project: ik sta voor u klaar.
             Met ruim 40 jaar ervaring in het vak en al 14 jaar als zelfstandig elektromonteur bent u verzekerd van vakmanschap en betrouwbaarheid..
