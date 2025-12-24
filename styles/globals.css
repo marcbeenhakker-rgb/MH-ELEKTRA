@@ -56,7 +56,7 @@ a{color:inherit;text-decoration:none}
 
 /* 🔥 Logo (header) */
 .logo{
-  height:82px;         /* desktop */
+  height:122px;         /* desktop */
   width:auto;
   display:block;
   object-fit:contain;
