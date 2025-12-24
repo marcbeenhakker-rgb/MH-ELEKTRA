@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function Layout({ children, title, description }) {
-  const t = title || "MH-Elektra";
-  const d = description || "MH-Elektra: storingen, meterkast/groepenkast, laadpaal en verlichting.";
+  const t = title || "MH Elektra";
+  const d = description || "MH Elektra: storingen, meterkast/groepenkast, laadpaal en verlichting.";
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function Layout({ children, title, description }) {
       </main>
 
       <footer className="container footer">
-        © {new Date().getFullYear()} MH-Elektra • mh-elektra.nl
+        © {new Date().getFullYear()} MH Elektra • mh-elektra.nl
       </footer>
     </>
   );
