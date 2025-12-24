@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 
 export default function Contact() {
   // Locatie voor Google Maps
-  const mapsQuery = encodeURIComponent("Leiden, Nederland");
+  const mapsQuery = encodeURIComponent("Korvetwal 13, 2317 GR Leiden, Nederland");
 
   return (
     <Layout title="Contact | MH-Elektra" description="Contact met MH-Elektra. Bel, mail of WhatsApp. Inclusief locatiekaart.">
@@ -27,14 +27,6 @@ export default function Contact() {
               <br />
               2317 GR Leiden
             </p>
-
-            <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
-            <p>
-              MH Elektra is gevestigd in Leiden en actief binnen een straal van ±30 km.
-              <br />
-              Ook buiten deze regio? Neem gerust contact op voor de mogelijkheden.
-            </p>
-          </div>
 
             <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
             <p>
