@@ -23,10 +23,9 @@ export default function Contact() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold">Bezoekadres</h3>
             <p>
-              Korvetwal 13
+              Leiden en omstreken
               <br />
-              2317 GR Leiden
-            </p>
+              </p>
 
             <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
             <p>
