@@ -16,6 +16,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
   color:var(--text);
@@ -25,6 +26,19 @@ body{
     var(--bg);
   line-height:1.65;
 }
+
+/* 🔥 MH ELEKTRA LOGO WATERMARK (SITE-BREED) */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("/logo.png") no-repeat center 140px;
+  background-size:420px;
+  opacity:0.035;
+  pointer-events:none;
+  z-index:-1;
+}
+
 a{color:inherit;text-decoration:none}
 
 /* Layout */
@@ -34,10 +48,10 @@ a{color:inherit;text-decoration:none}
   padding:var(--pad);
 }
 
-/* Topbar / Nav (FIX: wit, geen grauwe gloed achter transparant logo) */
+/* Topbar / Nav */
 .topbar{
   position:sticky; top:0; z-index:20;
-  background:#fff;                 /* ✅ wit */
+  background:#fff;
   border-bottom:1px solid var(--line);
 }
 .nav{
@@ -54,9 +68,9 @@ a{color:inherit;text-decoration:none}
   min-width:0;
 }
 
-/* 🔥 Logo (header) */
+/* Logo header */
 .logo{
-  height:122px;         /* desktop */
+  height:122px;
   width:auto;
   display:block;
   object-fit:contain;
@@ -84,7 +98,6 @@ a{color:inherit;text-decoration:none}
   box-shadow: 0 6px 16px rgba(17,24,39,.06);
   white-space:nowrap;
   cursor:pointer;
-  transition: transform .06s ease, background .15s ease, box-shadow .15s ease;
 }
 .btn:hover{background: rgba(17,24,39,.02)}
 .btn:active{transform: translateY(1px)}
@@ -105,7 +118,7 @@ a{color:inherit;text-decoration:none}
 /* Typography */
 .hero{padding:22px}
 .kicker{
-  display:inline-flex; align-items:center; gap:10px;
+  display:inline-flex;
   padding:7px 12px;
   border-radius:999px;
   border:1px solid rgba(229,17,16,.22);
@@ -114,15 +127,14 @@ a{color:inherit;text-decoration:none}
   font-weight:900;
   font-size:13px;
 }
-h1{margin:10px 0 10px; font-size:40px; line-height:1.12}
-h2{margin:0 0 10px; font-size:22px}
+h1{margin:10px 0;font-size:40px}
+h2{margin:0 0 10px;font-size:22px}
 p{margin:0 0 12px}
 .muted{color:var(--muted)}
 .small{font-size:13px}
 
 /* Grids */
 .stack{display:grid; gap:14px; padding:18px 0}
-.stack2{display:grid; gap:14px; grid-template-columns: 1fr}
 
 /* Actions */
 .actions{
@@ -131,28 +143,21 @@ p{margin:0 0 12px}
   flex-wrap:wrap;
   margin-top:10px;
 }
-.actions .btn{flex: 1 1 220px}
-
-/* small utility helpers */
-.text-xl{font-size:20px; line-height:1.25}
-.font-semibold{font-weight:700}
-.mt-4{margin-top:16px}
-.mb-6{margin-bottom:24px}
+.actions .btn{flex:1 1 220px}
 
 /* Lists */
 .list{display:grid; gap:10px; margin-top:10px}
 .row{
-  display:flex; gap:10px; align-items:flex-start;
+  display:flex; gap:10px;
   padding:12px;
   border-radius:14px;
   border:1px solid var(--line);
   background: rgba(17,24,39,.02);
 }
 .dot{
-  width:10px;height:10px;border-radius:999px;background:var(--red);
-  box-shadow: 0 0 0 4px rgba(229,17,16,.10);
-  margin-top:7px;
-  flex:0 0 auto;
+  width:10px;height:10px;
+  border-radius:999px;
+  background:var(--red);
 }
 
 /* Footer */
@@ -164,121 +169,25 @@ p{margin:0 0 12px}
   border-top:1px solid var(--line);
 }
 
-/* Slider */
-.slider{padding:0; overflow:hidden}
-.sliderInner{position:relative}
-.slideImg{width:100%; height:380px; object-fit:cover; display:block; background:#eef1f6}
-.caption{
-  position:absolute; left:14px; bottom:14px;
-  padding:10px 12px;
-  border-radius:14px;
-  background: rgba(255,255,255,.92);
-  border:1px solid rgba(17,24,39,.10);
-  font-weight:900;
-}
-.navBtn{
-  position:absolute; top:50%; transform:translateY(-50%);
-  width:44px; height:44px; border-radius:999px;
-  border:1px solid rgba(17,24,39,.12);
-  background: rgba(255,255,255,.92);
-  display:grid; place-items:center;
-  cursor:pointer;
-  font-size:22px;
-}
-.navBtn:hover{background:#fff}
-.navBtn.left{left:10px}
-.navBtn.right{right:10px}
-.dots{
-  position:absolute; left:0; right:0; bottom:10px;
-  display:flex; gap:8px; justify-content:center;
-}
-.dotBtn{
-  width:10px; height:10px; border-radius:999px;
-  border:1px solid rgba(17,24,39,.20);
-  background: rgba(255,255,255,.85);
-  cursor:pointer;
-}
-.dotBtn.active{
-  background: var(--red);
-  border-color: rgba(229,17,16,.35);
-}
-
-/* Map */
-.mapWrap{
-  overflow:hidden;
-  border-radius:18px;
-  border:1px solid var(--line);
-  box-shadow: var(--shadow);
-  background:#fff;
-  margin-top:10px;
-}
-.mapWrap iframe{width:100%; height:420px; border:0; display:block}
-
-/* Logos */
-.logoSection{margin-top:6px}
-.logoHeader{margin-bottom:10px}
-.logoGrid{
-  display:grid;
-  gap:12px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.logoCard{
-  border:1px solid var(--line);
-  background: rgba(17,24,39,.02);
-  border-radius:14px;
-  padding:12px;
-  display:grid;
-  place-items:center;
-  min-height:78px;
-}
-.logoImg{
-  height:48px;
-  width:auto;
-  display:block;
-  object-fit:contain;
-  filter: saturate(0.95);
-}
-
-/* Mobile logo strip (swipe) */
-.logoStrip{
-  display:flex;
-  gap:12px;
-  overflow:auto;
-  padding-bottom:6px;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type:x mandatory;
-}
-.logoStrip .logoCard{
-  flex:0 0 auto;
-  min-width:160px;
-  scroll-snap-align:start;
-}
-
 /* Responsive */
-@media (min-width: 700px){
-  .logoGrid{grid-template-columns: repeat(4, minmax(0, 1fr))}
-  .logoStrip{overflow:visible; scroll-snap-type:none; flex-wrap:wrap}
-  .logoStrip .logoCard{min-width:auto}
+@media (max-width:600px){
+  body::before{
+    background-size:260px;
+    background-position:center 120px;
+    opacity:0.03;
+  }
 }
 
-@media (max-width: 860px){
+@media (max-width:860px){
   .links{display:none}
   h1{font-size:34px}
-  .logo{height:54px}   /* iPad/tablet */
-  .nav{min-height:72px}
+  .logo{height:54px}
 }
 
-@media (min-width: 980px){
-  .stack2{grid-template-columns: 1fr 1fr; align-items:start}
-}
-
-@media (max-width: 520px){
-  :root{ --pad:16px; }
+@media (max-width:520px){
+  :root{--pad:16px}
   .card{padding:16px}
   .actions{flex-direction:column}
-  .actions .btn{width:100%; flex:1 1 auto}
-  .mapWrap iframe{height:320px}
-  .slideImg{height:260px}
-  .logo{height:48px}   /* telefoon */
-  .nav{min-height:68px}
+  .actions .btn{width:100%}
+  .logo{height:48px}
 }
