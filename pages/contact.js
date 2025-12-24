@@ -9,7 +9,7 @@ export default function Contact() {
       <section className="stack stack2">
         <div className="card">
           <h1>Contact</h1>
-          <p className="muted">Stuur je vraag + locatie + (liefst) foto’s van de meterkast/klus.</p>
+          <p className="muted">Het begint met een goed gesprek.</p>
 
           <div className="actions">
             <a className="btn btnRed" href="tel:+31642884827">📞 +31 6 42 88 48 27</a>
@@ -28,7 +28,7 @@ export default function Contact() {
 
             <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
             <p>
-              MH Elektra is gevestigd in Leiden en actief binnen een straal van ±30 km.
+              MH Elektra is gevestigd in Leiden.
               <br />
               Ook buiten deze regio? Neem gerust contact op voor de mogelijkheden.
             </p>
