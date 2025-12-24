@@ -21,9 +21,8 @@ export default function Contact() {
         <div className="card">
           <h2>Locatie / Werkgebied</h2>
           <div className="mb-6">
-            <h3 className="text-xl font-semibold">Bezoekadres</h3>
+            <h3 className="text-xl font-semibold"></h3>
             <p>
-              Leiden en omstreken
               <br />
               </p>
 
