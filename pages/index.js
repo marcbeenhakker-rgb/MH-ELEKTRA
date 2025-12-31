@@ -83,13 +83,7 @@ export default function Home() {
           <p className="muted small" style={{ marginTop: 10 }}>
             Tip: stuur foto’s van de meterkast/klus mee voor een snelle inschatting.
           </p>
-        </div>
-
-        <div className="card">
-          <LogoStrip
-            title="Logo’s / merken"
-            subtitle="Voeg eenvoudig nieuwe logo’s toe door bestanden te plaatsen in /public/logos (png/jpg/webp/svg)."
-          />
+      
         </div>
               {/* Merkenbalk onderaan */}
 <div className="brandBar">
