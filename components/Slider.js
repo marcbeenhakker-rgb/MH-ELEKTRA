@@ -4,7 +4,7 @@ export default function Slider() {
   const slides = useMemo(() => ([
     { src: "/slides/slide1.jpg", label: "Laadpaal voorbereiding" },
     { src: "/slides/slide2.jpg", label: "Verlichting (binnen/buiten)" },
-    { src: "/slides/slide3.jpg", label: "Meterkast / groepenkas" }
+    { src: "/slides/slide3.jpg", label: "Meterkast / groepenkast" }
   ]), []);
 
   const [idx, setIdx] = useState(0);
