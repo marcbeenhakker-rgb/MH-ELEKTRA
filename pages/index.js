@@ -91,6 +91,10 @@ export default function Home() {
             subtitle="Voeg eenvoudig nieuwe logo’s toe door bestanden te plaatsen in /public/logos (png/jpg/webp/svg)."
           />
         </div>
+              {/* Merkenbalk onderaan */}
+<div className="brandBar">
+  <LogoStrip />
+</div>
       </section>
     </Layout>
   );
