@@ -14,23 +14,23 @@ export default function Contact() {
           <div className="actions">
             <a className="btn btnRed" href="tel:+31642884827">📞 +31 6 42 88 48 27</a>
             <a className="btn" href="mailto:michelhockx@ziggo.nl?subject=Offerte%20MH-Elektra">✉️ michelhockx@ziggo.nl</a>
-            <a className="btn" target="_blank" rel="noopener" href="https://wa.me/31642884827?text=Hoi%20MH-Elektra%2C%20ik%20wil%20graag%20een%20offerte%20voor...">💬 WhatsApp offerte</a>
+            <a className="btn" target="_blank" rel="noopener" href="https://wa.me/31642884827?text=Hoi%20MH Elektra%2C%20ik%20wil%20graag%20een%20offerte%20voor...">💬 WhatsApp offerte</a>
           </div>
         </div>
 
         <div className="card">
-          <h2>Locatie / Werkgebied</h2>
+          <h2>MH Elektra werkt in en rondom Leiden.</h2>
           <div className="mb-6">
             <h3 className="text-xl font-semibold"></h3>
             <p>
               <br />
               </p>
 
-            <h3 className="text-xl font-semibold mt-4">Werkgebied</h3>
+            <h3 className="text-xl font-semibold mt-4">Actief in de regio</h3>
             <p>
-              MH Elektra is gevestigd in Leiden.
+              MH Elektra is actief in Leiden.
               <br />
-              Ook buiten deze regio? Neem gerust contact op voor de mogelijkheden.
+              Ook buiten deze regio kunt u contact opnemen voor de mogelijkheden.
             </p>
           </div>
 
