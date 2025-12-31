@@ -74,7 +74,7 @@ export default function Home() {
 
         <div className="card">
           <h2>Snel naar</h2>
-          <p className="muted">Alles onder elkaar, simpel en duidelijk.</p>
+          <p className="muted"></p>
           <div className="actions">
             <Link className="btn" href="/diensten">Diensten</Link>
             <Link className="btn" href="/projecten">Projecten + slider</Link>
