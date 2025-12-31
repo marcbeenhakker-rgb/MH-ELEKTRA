@@ -7,7 +7,7 @@ export default function Projecten() {
       <section className="stack">
         <div className="card">
           <h1>Projecten</h1>
-          <p className="muted">Opgelverde projecten</p>
+          <p className="muted">Opgeleverde projecten</p>
         </div>
 
         <Slider />
