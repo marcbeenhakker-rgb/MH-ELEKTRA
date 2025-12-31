@@ -6,7 +6,7 @@ export default function Diensten() {
       <section className="stack">
         <div className="card">
           <h1>Diensten</h1>
-          <p className="muted">Korte lijst. Geen drukke blokken naast elkaar.</p>
+          <p className="muted">Voor al uw elektrotechnische werkzaamheden kunt u bij mij terecht. Ik lever veilige oplossingen waar u op kunt vertrouwen.</p>
         </div>
 
         <div className="card">
