@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className="card">
-          <h2>Waarom MH-Elektra</h2>
+          <h2>Waarom MH Elektra</h2>
           <div className="list">
             <div className="row">
               <span className="dot" />
