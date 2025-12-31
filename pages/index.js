@@ -5,7 +5,7 @@ import LogoStrip from "../components/LogoStrip";
 export default function Home() {
   return (
     <Layout
-      title="MH-Elektra | Elektricien"
+      title="MH Elektra | Elektricien"
       description="MH-Elektra: storingen, meterkast/groepenkast, laadpalen en verlichting. Snel contact en duidelijke afspraken."
     >
       <section className="stack">
