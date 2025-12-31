@@ -2,9 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 
 export default function Slider() {
   const slides = useMemo(() => ([
-    { src: "/slides/slide1.jpg", label: "Meterkast / groepenkast" },
+    { src: "/slides/slide1.jpg", label: "Laadpaal voorbereiding" },
     { src: "/slides/slide2.jpg", label: "Verlichting (binnen/buiten)" },
-    { src: "/slides/slide3.jpg", label: "Laadpaal voorbereiding" }
+    { src: "/slides/slide3.jpg", label: "Meterkast / groepenkas" }
   ]), []);
 
   const [idx, setIdx] = useState(0);
